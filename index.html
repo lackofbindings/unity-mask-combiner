@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Unity Mask Combiner</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <form id="form_main">
+        <textarea id="inputA" name="inputA" required placeholder="Source Mask"></textarea>
+        <textarea id="inputB" name="inputB" required placeholder="Destination Mask"></textarea>
+        <div class="controls">
+            <button type="submit">Combine</button>
+            <button type="reset">Clear</button>    
+        </div>
+        <p>Items from the <b>Source Mask</b> mask will be combined additively into the <b>Destination Mask</b>.<br>
+            Copy the result from the <b>Destination Mask</b> out to your .mask file after combining.
+        </p>
+        <p><i>Note: The Humanoid part of the mask is ignored, whatever is set in the destination mask will be unchanged.</i></p>
+    </form>
+</body>
+</html>

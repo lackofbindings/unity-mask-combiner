@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+	background-color: #383838;
+	color: #E8E8E8;
+	font-family: sans-serif;
+}
+button, input, textarea {
+	background-color: #585858;
+	border-color: #585858;
+	color: inherit;
+	padding: 1em;
+}
+button {
+    border-style: solid;
+}
+#form_main {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 1em
+}
+#form_main > textarea {
+    flex-grow: 1;
+    white-space: pre;
+    overflow-wrap: normal;
+    overflow-x: scroll;
+	padding: 1em;
+	border-style: solid;
+	background-color: #383838;
+}
+
+.controls {
+    display: flex;
+}
+.controls > * {
+    flex-grow: 1;
+    margin-right: 2px;
+}
+.controls > button[type=reset] {
+    flex-grow: 0;
+    min-width: 10em;
+    margin-right: 0;
+}
